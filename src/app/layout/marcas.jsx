@@ -4,7 +4,7 @@ import { marcas } from "../utils/marcas";
 
 export default function Marcas() {
     return (
-        <div className="flex flex-col items-center gap-2 ">
+        <div className="flex flex-col items-center gap-2 justify-center w-full ">
             <h4 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight font-dm-serif-text mt-20">Marcas con las que trabajamos</h4>
             <div className="flex flex-wrap justify-center items-center gap-4">
                 {marcas.map((marca) => (

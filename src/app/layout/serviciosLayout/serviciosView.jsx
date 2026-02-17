@@ -10,12 +10,7 @@ import { useEffect } from "react";
 
 export default function ServiciosView() {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-        });
-    }, []);
+
 
     return (
         <section className="bg-white w-full">
@@ -32,7 +27,7 @@ export default function ServiciosView() {
                 </div>
             </div>
             <div className="mb-20 w-full px-6" data-aos="fade-right" >
-                <h2 className="text-4xl font-bold text-center font-dm-serif-text mt-20">Que hacemos?</h2>
+                <h2 className="text-black text-4xl font-bold text-center font-dm-serif-text mt-20">Que hacemos?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12 mx-6">
                     <div className="relative w-full aspect-square md:aspect-video lg:aspect-square max-h-[400px] lg:max-h-[300px] mx-auto">
                         <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/20 to-blue-500/20 rounded-3xl blur-2xl transform rotate-3"></div>
