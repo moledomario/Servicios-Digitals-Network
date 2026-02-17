@@ -18,10 +18,7 @@ export default function ServiciosView() {
     }, []);
 
     return (
-        <>
-            <Header />
-
-
+        <section className="bg-white w-full">
 
             <div className="w-full h-[70vh] mt-20 flex items-center justify-center" style={{ backgroundImage: "url('/servicios.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
                 <div className="text-center flex items-center gap-2 flex-col">
@@ -144,6 +141,6 @@ export default function ServiciosView() {
                 </div>
             </div>
             <Footer />
-        </>
+        </section>
     );
 }

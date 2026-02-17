@@ -16,7 +16,7 @@ export default function CartaProductos({ limit }) {
                         <li key={producto.id} className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-gray-100 flex flex-col h-[400px] hover:-translate-y-2">
                             {/* Image Container */}
                             <div className="relative aspect-square w-full bg-gray-50/50 overflow-hidden border-b border-gray-50">
-                                <Link href={`/productos/${producto.id}`} className="block h-full w-full p-6">
+                                <div className="block h-full w-full p-6">
                                     <Image
                                         src={producto.imagen}
                                         alt={producto.name}
@@ -24,7 +24,7 @@ export default function CartaProductos({ limit }) {
                                         className="object-contain  transition-transform duration-700 group-hover:scale-110"
                                         priority
                                     />
-                                </Link>
+                                </div>
                                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-[var(--primary)] shadow-sm border border-gray-100">
                                     Nuevo
                                 </div>

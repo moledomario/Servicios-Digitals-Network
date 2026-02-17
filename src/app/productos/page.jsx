@@ -8,7 +8,7 @@ import Marcas from "../layout/marcas";
 
 export default function Productos() {
     return (
-        <div className="min-h-screen bg-gray-50/30 mt-20">
+        <div className="bg-white w-full min-h-screen bg-gray-50/30 mt-20">
             <Header />
             <Marcas />
             <main className="pt-32 pb-24">
