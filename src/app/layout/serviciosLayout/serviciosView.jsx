@@ -2,14 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../componentes/Header";
+
 import Footer from "../../layout/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 
 export default function ServiciosView() {
-
 
 
     return (
@@ -26,7 +23,7 @@ export default function ServiciosView() {
                     </svg>
                 </div>
             </div>
-            <div className="mb-20 w-full px-6" data-aos="fade-right" >
+            <div className="mb-20 w-full px-6"  >
                 <h2 className="text-black text-4xl font-bold text-center font-dm-serif-text mt-20">Que hacemos?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12 mx-6">
                     <div className="relative w-full aspect-square md:aspect-video lg:aspect-square max-h-[400px] lg:max-h-[300px] mx-auto">
@@ -61,7 +58,7 @@ export default function ServiciosView() {
                     </div>
                 </div>
             </div>
-            <div className="mb-20 w-full px-6" data-aos="fade-left" >
+            <div className="mb-20 w-full px-6">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12 mx-6">
                     <div>
@@ -98,7 +95,7 @@ export default function ServiciosView() {
                     </div>
                 </div>
             </div>
-            <div className="mb-20 w-full px-6" data-aos="fade-right" >
+            <div className="mb-20 w-full px-6" >
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 mt-12 mx-6">
 

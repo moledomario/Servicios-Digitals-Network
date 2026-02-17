@@ -6,7 +6,7 @@ export default function Productos() {
 
 
     return (
-        <section className="bg-white flex flex-col items-center my-10">
+        <section className="bg-white flex flex-col items-center mt-20 mb-20">
             <h2 className="text-4xl font-bold mb-4">Algunos de nuestros <span className="text-[var(--primary)]">productos</span></h2>
             <CartaProductos limit={3} />
             <Link
