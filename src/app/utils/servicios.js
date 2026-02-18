@@ -2,7 +2,7 @@ const servicios = [
     {
         id: 1,
         name: "Servicio 1",
-        description: "Descripción del servicio 1",
+        description: "Buen video1",
         image: "/images/servicio1.jpg",
     },
     {
