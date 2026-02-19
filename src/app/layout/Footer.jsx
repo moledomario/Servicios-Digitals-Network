@@ -105,7 +105,7 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
                     <p className="text-gray-500 text-sm">
-                        © 2026 Servicios Digitals Network. Todos los derechos reservados.
+                        © 2026 Servicios Digitales Network. Todos los derechos reservados.
                     </p>
                     <p className="text-gray-500 text-sm flex items-center gap-1">
                         Desarrollado por

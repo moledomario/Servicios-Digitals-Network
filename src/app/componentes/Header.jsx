@@ -8,7 +8,7 @@ const navLinks = [
     { href: "/servicios", label: "Servicios" },
     { href: "/productos", label: "Productos" },
     { href: "/blog", label: "Blog" },
-    { href: "/market", label: "MarketPlace" },
+
 ];
 
 export default function Header() {

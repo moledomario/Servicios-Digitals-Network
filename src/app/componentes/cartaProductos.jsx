@@ -46,7 +46,7 @@ export default function CartaProductos({ limit }) {
                                 {/* Action Area */}
                                 <div className="mt-auto pt-4 border-t border-gray-50">
                                     <Link
-                                        href={`https://wa.me/54911262626?text=Hola!%20Me%20interesa%20el%20producto%20${producto.name}`}
+                                        href={`https://wa.me/51948599036?text=Hola!%20Me%20interesa%20el%20producto%20${producto.name}`}
                                         target="_blank"
                                         className="w-full py-3 px-6 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-xl flex items-center justify-center gap-3 transition-all duration-300 shadow-sm hover:shadow-green-500/20 active:scale-95"
                                     >
