@@ -1,5 +1,5 @@
 'use client';
-import Header from '../../Componentes/Header';
+
 import { useState } from 'react';
 
 export default function Contacto() {
