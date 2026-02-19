@@ -32,7 +32,7 @@ export default function CartaProductos({ limit }) {
 
                             {/* Content */}
                             <div className="p-6 flex flex-col flex-grow">
-                                <Link href={`/productos/${producto.id}`} className="block mb-4">
+                                <div className="block mb-4">
                                     <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[var(--primary)] transition-colors line-clamp-1">
                                         {producto.name}
                                     </h2>
@@ -41,7 +41,7 @@ export default function CartaProductos({ limit }) {
                                             <li key={index} className="line-clamp-1">{descripcion}</li>
                                         ))}
                                     </ul>
-                                </Link>
+                                </div>
 
                                 {/* Action Area */}
                                 <div className="mt-auto pt-4 border-t border-gray-50">

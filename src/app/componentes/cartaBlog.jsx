@@ -13,7 +13,7 @@ export default function CartaBlog() {
                     key={video.id}
                     className="group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white"
                 >
-                    {console.log(video.description)}
+
                     {/* Contenedor 16:9 */}
                     <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
                         <iframe
