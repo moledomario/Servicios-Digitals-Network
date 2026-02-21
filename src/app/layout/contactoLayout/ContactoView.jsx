@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 export default function Contacto() {
     const [formData, setFormData] = useState({
-        nombre: "",
+        name: "",
         email: "",
-        mensaje: ""
+        message: ""
     });
 
     const [status, setStatus] = useState("idle");
@@ -16,7 +16,7 @@ export default function Contacto() {
         setStatus('loading');
 
         try {
-            const res = await fetch('/api/contacto', {
+            const res = await fetch('/api/emailApi/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -25,7 +25,7 @@ export default function Contacto() {
             if (!res.ok) throw new Error('Error al enviar el formulario');
 
             setStatus('success');
-            setFormData({ nombre: "", email: "", mensaje: "" });
+            setFormData({ name: "", email: "", message: "" });
         } catch (error) {
             console.error(error);
             setStatus('error');
@@ -71,8 +71,8 @@ export default function Contacto() {
                             <input
                                 type="text"
                                 placeholder="Ej: Juan García"
-                                value={formData.nombre}
-                                onChange={(e) => setFormData({ ...formData, nombre: e.target.value })}
+                                value={formData.name}
+                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                 required
                                 className={inputBase}
                             />
@@ -98,8 +98,8 @@ export default function Contacto() {
                             </label>
                             <textarea
                                 placeholder="¿En qué podemos ayudarte?"
-                                value={formData.mensaje}
-                                onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
+                                value={formData.message}
+                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                 required
                                 rows={5}
                                 className={`${inputBase} resize-none`}

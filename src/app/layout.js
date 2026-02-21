@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, DM_Serif_Text } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const dmSerifText = DM_Serif_Text({
   variable: "--font-dm-serif-text",
@@ -32,6 +33,7 @@ import SmoothScroll from "./componentes/SmoothScroll";
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
+      <GoogleTagManager gtmId="GTM-K9VMSXGD" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmSerifText.variable} antialiased`}
       >
