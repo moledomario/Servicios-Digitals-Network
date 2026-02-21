@@ -1,6 +1,6 @@
-import BlogView from "../layout/blogView";
+import BlogView from "../layout/blogLayout/blogView";
 import Header from "../componentes/Header";
-import Footer from "../layout/Footer";
+import Footer from "../componentes/Footer";
 export default function Blog() {
     return (
         <section className="flex flex-col gap-4">

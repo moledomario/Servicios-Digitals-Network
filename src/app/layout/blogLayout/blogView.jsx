@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CartaBlog from "../componentes/cartaBlog";
+import CartaBlog from "../../componentes/cartaBlog";
 
 
 export default function BlogView() {

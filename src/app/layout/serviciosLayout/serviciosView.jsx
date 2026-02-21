@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Footer from "../../layout/Footer";
+import Footer from "../../componentes/Footer";
 
 
 export default function ServiciosView() {
@@ -12,7 +12,7 @@ export default function ServiciosView() {
     return (
         <section className="bg-white w-full">
 
-            <div className="w-full h-[70vh] mt-20 flex items-center justify-center" style={{ backgroundImage: "url('/servicios.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+            <div className="w-full h-[70vh] mt-20 flex items-center justify-center" style={{ backgroundImage: "url('/servicios/servicios.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
                 <div className="text-center flex items-center gap-2 flex-col">
                     <h1 className="text-6xl font-bold text-white font-dm-serif-text mb-4" >Nuestros Servicios</h1>
                     <p className="text-xl text-gray-200 bg-black/50 p-2 rounded">Soluciones digitales a medida</p>
@@ -30,7 +30,7 @@ export default function ServiciosView() {
                         <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/20 to-blue-500/20 rounded-3xl blur-2xl transform rotate-3"></div>
                         <div className="relative h-full w-full bg-white/50 backdrop-blur-sm border border-white/40 rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 hover:scale-[1.02]">
                             <Image
-                                src="/servicios2.jpg"
+                                src="/servicios/servicios2.jpg"
                                 alt="Servicios Digitales y Mantenimiento"
                                 fill
                                 className="object-cover"
@@ -82,7 +82,7 @@ export default function ServiciosView() {
                         <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/20 to-blue-500/20 rounded-3xl blur-2xl transform rotate-3"></div>
                         <div className="relative h-full w-full bg-white/50 backdrop-blur-sm border border-white/40 rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 hover:scale-[1.02]">
                             <Image
-                                src="/servicios-img.jpeg"
+                                src="/servicios/servicios-img.jpeg"
                                 alt="Servicios Digitales y Mantenimiento"
                                 fill
                                 className="object-cover"
@@ -103,7 +103,7 @@ export default function ServiciosView() {
                         <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/20 to-blue-500/20 rounded-3xl blur-2xl transform rotate-3"></div>
                         <div className="relative h-full w-full bg-white/50 backdrop-blur-sm border border-white/40 rounded-3xl overflow-hidden shadow-xl transition-transform duration-500 hover:scale-[1.02]">
                             <Image
-                                src="/servicios3.jpeg"
+                                src="/servicios/servicios3.jpeg"
                                 alt="Servicios Digitales y Mantenimiento"
                                 fill
                                 className="object-cover"

@@ -34,7 +34,7 @@ export default function Contacto() {
 
     const handleWhatsapp = () => {
         const mensaje = encodeURIComponent("Hola, me gustaría obtener información sobre sus servicios.");
-        window.open(`https://wa.me/2966350730?text=${mensaje}`, "_blank");
+        window.open(`https://wa.me/51948599036?text=${mensaje}`, "_blank");
     };
 
     const inputBase =
@@ -160,14 +160,14 @@ export default function Contacto() {
 
                     {/* Info Cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm hover:shadow-md transition-shadow duration-300 w-[310px]">
                             <div className="bg-blue-50 rounded-lg w-9 h-9 flex items-center justify-center mb-3">
                                 <svg className="w-4 h-4 text-[var(--primary)]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
-                            <h3 className="text-sm font-bold text-gray-800 mb-1">Email</h3>
-                            <p className="text-xs text-gray-500">contacto@serviciosdigitales.com</p>
+                            <h3 className="text-sm font-bold text-gray-800 mb-1">Gmail</h3>
+                            <p className="text-xs text-gray-500">comercial@servicios-digitals-network.com</p>
                         </div>
 
 

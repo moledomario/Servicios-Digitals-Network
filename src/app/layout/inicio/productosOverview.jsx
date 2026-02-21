@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CartaProductos from "../componentes/cartaProductos";
+import CartaProductos from "../../componentes/cartaProductos";
 
 export default function Productos() {
 

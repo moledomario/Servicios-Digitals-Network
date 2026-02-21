@@ -41,5 +41,6 @@ export const videos = [
         url: "https://www.youtube.com/watch?v=hmGmeGDRUAU&list=PLSvxAUzJ-XSfY0KpwV8SHBlyLVcrZkENc&index=7",
         description: "Configuracion ....",
         thumbnail: "https://www.youtube.com/watch?v=hmGmeGDRUAU&list=PLSvxAUzJ-XSfY0KpwV8SHBlyLVcrZkENc&index=7"
-    }
+    },
+
 ]

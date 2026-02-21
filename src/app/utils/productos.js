@@ -48,7 +48,17 @@ const productos = [
             "Reloj fitness con GPS .",
         ],
         imagen: "/productos/reloj-fitness.jpeg",
-    }
+    },
+    {
+        id: 6,
+        name: "Celular",
+        description: [
+            "Celular con 4GB de RAM.",
+            "Celular con 4GB de RAM.",
+            "Celular con 4GB de RAM.",
+        ],
+        imagen: "/productos/celular.jpg",
+    },
 ];
 
 export default productos;

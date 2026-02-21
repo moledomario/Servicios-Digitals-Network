@@ -1,9 +1,9 @@
-import Hero from "./layout/hero";
+import Hero from "./layout/inicio/hero";
 import Header from "./componentes/Header";
 import Stats from "./componentes/Stats";
-import ProductosOverview from "./layout/productosOverview";
-import Contacto from "./layout/contacto";
-import Footer from "./layout/Footer";
+import ProductosOverview from "./layout/inicio/productosOverview";
+import Contacto from "./layout/inicio/contacto";
+import Footer from "./componentes/Footer";
 
 export default function Home() {
   return (

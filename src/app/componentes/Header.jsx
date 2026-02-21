@@ -62,8 +62,14 @@ export default function Header() {
                                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[var(--primary)] to-blue-400 group-hover:w-full transition-all duration-300"></span>
                             </Link>
                         ))}
-
-                        {/* CTA Button */}
+                        <Link
+                            href="https://www.facebook.com/profile.php?id=61588238562809"
+                            target="_blank"
+                            className="text-gray-700 hover:text-[var(--primary)] transition-all duration-300 font-semibold relative group text-sm uppercase tracking-wide"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Marketplace
+                        </Link>
                         <Link
                             href="/contacto"
                             className="group relative px-6 py-2.5 bg-gradient-to-r from-[var(--primary)] to-blue-400 text-white font-bold rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[var(--primary)]/30 hover:scale-105"
@@ -102,6 +108,14 @@ export default function Header() {
                                 {link.label}
                             </Link>
                         ))}
+                        <Link
+                            href="https://www.facebook.com/profile.php?id=61588238562809"
+                            target="_blank"
+                            className="text-gray-700 hover:text-[var(--primary)] hover:bg-gray-50 transition-all duration-300 font-medium py-3 px-6 rounded-lg mx-2 border border-transparent hover:border-[var(--primary)]/30"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Marketplace
+                        </Link>
                         <Link
                             href="/contacto"
                             className="mx-2 mt-2 px-6 py-3 bg-gradient-to-r from-[var(--primary)] to-blue-400 text-white font-bold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[var(--primary)]/30 text-center"

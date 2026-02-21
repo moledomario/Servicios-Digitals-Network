@@ -1,9 +1,9 @@
 'use client';
 
 import Header from "../componentes/Header";
-import Footer from "../layout/Footer";
+import Footer from "../componentes/Footer";
 import CartaProductos from "../componentes/cartaProductos";
-import Marcas from "../layout/marcas";
+import Marcas from "../componentes/marcas";
 
 
 export default function Productos() {
