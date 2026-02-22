@@ -21,22 +21,83 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Servicios Digitales Network",
-  description: "Servicios Digitales Network",
+  metadataBase: new URL('https://servicios-digitales-network.com'), // Reemplazar con la URL real si es distinta
+  title: {
+    default: "Servicios Digitales Network | Soluciones Tecnológicas de Alta Calidad",
+    template: "%s | Servicios Digitales Network"
+  },
+  description: "Líderes en servicios digitales y tecnología. Ofrecemos soluciones innovadoras para potenciar tus proyectos con la mejor selección de productos tecnológicos.",
+  keywords: ["servicios digitales", "tecnología", "productos tecnológicos", "redes", "soluciones it", "marketing digital"],
+  authors: [{ name: "Servicios Digitales Network" }],
+  creator: "Servicios Digitales Network",
+  publisher: "Servicios Digitales Network",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   icons: {
     icon: "/logo-tab.png",
+    shortcut: "/logo-tab.png",
+    apple: "/logo-tab.png",
+  },
+  openGraph: {
+    title: "Servicios Digitales Network",
+    description: "Soluciones tecnológicas y productos de alta gama para tu transformación digital.",
+    url: 'https://servicios-digitales-network.com',
+    siteName: 'Servicios Digitales Network',
+    locale: 'es_ES',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Servicios Digitales Network",
+    description: "Soluciones tecnológicas y productos de alta gama para tu transformación digital.",
+    creator: "@serviciosdigitales",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
 import SmoothScroll from "./componentes/SmoothScroll";
-
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Servicios Digitales Network',
+    url: 'https://servicios-digitales-network.com',
+    logo: 'https://servicios-digitales-network.com/logo-tab.png',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+51948599036',
+      contactType: 'customer service',
+      availableLanguage: 'Spanish',
+    },
+    sameAs: [
+      'https://www.facebook.com/profile.php?id=61588238562809',
+      'https://www.instagram.com/serviciosdigitalsnetwork/',
+    ],
+  };
+
   return (
     <html lang="es">
       <GoogleTagManager gtmId="GTM-K9VMSXGD" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmSerifText.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <SmoothScroll>
           {children}
         </SmoothScroll>
